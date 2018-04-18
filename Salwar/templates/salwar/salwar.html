@@ -20,18 +20,18 @@
 
       <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: lightblue;">
-    <a class="navbar-brand" href="{% url 'home' %}">Unique Collectioins</a>
+    <a class="navbar-brand" href="{% url 'salwar' %}">Unique Collectioins</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
     <div class="navbar-nav ml-auto">
       <ul class="navbar-nav">
-           <li class="nav-item">
-          <a class="nav-link active" href="{% url 'home' %}">Saree <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Saree</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'salwar' %}">Salwar</a>
+          <a class="nav-link active" href="{% url 'salwar' %}">Salwar<span class="sr-only">(current)</span></a>
         </li>
         <!--<li class="nav-item">
           <a class="nav-link" href="#">Bags</a>
@@ -44,14 +44,14 @@
 
       <main role="main">
 
-        <section class="jumbotron text-center">
+      <section class="jumbotron text-center">
           <div class="container">
-            <h1 class="jumbotron-heading">Welcome to Unique Collections Sarees</h1>
+            <h1 class="jumbotron-heading">Welcome to Unique Collections Salwars</h1>
             <p class="lead text-muted">Happy Shopping.</p>
             <p>
               <!--<a href="kumse02@gmail.com" class="btn btn-success my-2">Email Me</a>-->
               </p>
-              <img src="{% static 'Saree3.jpg' %}" height="200" />
+              <img src="{% static 'salwar1.jpg' %}" height="200" />
              </div>
         </section>
 
@@ -79,7 +79,7 @@
 
       <footer class="text-muted">
       <div class="container text-right">
-        <a href="{% url 'home' %}" class="btn btn-primary">Back to top</a>
+        <!--<a href="{% url 'home' %}" class="btn btn-primary">Back to top</a>-->
         </div>
        <div class="container text-center">
         <p>&copy; Unique Collections {% now "Y" %}</p> 
