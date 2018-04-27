@@ -11,6 +11,8 @@
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+        <link href="https://fonts.googleapis.com/css?family=Arvo:700,700i" rel="stylesheet"> 
 
         <!-- Custom styles for this template -->
         <link href="album.css" rel="stylesheet">
@@ -65,14 +67,14 @@
                </div>
                </div>
           </section>
-
+          <section id="img">
           <div class="album py-5 bg-dark">
             <div class="container">
               <div class="row">
               {% for job in jobs.all %}
-                <div class="col-md-2">
+             <div class="col-md-2 col-sm-6">
                   <div class="card mb-1 box-shadow">
-                    <img class="card-img-top" src="{{ job.image.url }}" height="100" />
+                    <img class="card-img-top" src="{{ job.image.url }}" height="150" />
                     <div class="card-body">
                       <p class="card-text">{{ job.summary }}</p>
                       <div class="navbar-nav ml-auto">
@@ -85,7 +87,7 @@
                </div>
             </div>
           </div>
-
+            
         </main>
 
        <footer class="text-muted">
