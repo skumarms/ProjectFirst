@@ -63,7 +63,7 @@
               <!--<p>
                 <a href="kumse02@gmail.com" class="btn btn-success my-2">Email Me</a>
                 </p>-->
-                <img src="{% static 'salwar1.jpg' %}" height="200" />
+                <img src="{% static 'Salwar.jpg' %}" class="img-fluid" height="200" width="400" />
                </div>
                </div>
           </section>
@@ -74,7 +74,7 @@
               {% for job in jobs.all %}
              <div class="col-md-2 col-sm-6">
                   <div class="card mb-1 box-shadow">
-                    <img class="card-img-top" src="{{ job.image.url }}" height="150" />
+                    <img class="card-img-top" src="{{ job.image.url }}" height="175" />
                     <div class="card-body">
                       <p class="card-text">{{ job.summary }}</p>
                       <div class="navbar-nav ml-auto">
